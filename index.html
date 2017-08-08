@@ -13,20 +13,20 @@
 </head>
 <body>
   <div class="container">
-    <div class="card">
+    <div class="card animated fadeInLeft">
       <div class="text-center">
         <img class="card-img-top" style="width: 300px;"  src="http://pre11.deviantart.net/b72b/th/pre/f/2016/063/a/6/logo_by_maxigamer-d9tx6iz.png" alt="Card image cap">
       </div>
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
-            <a class="nav-link active" href="#"><span class="glyphicon glyphicon-earphone pull-left"></span>All</a>
+            <a class="nav-link active" href="#" onclick="loadPageInfo();"><span class="glyphicon glyphicon-earphone pull-left"></span>All</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Online</a>
+            <a class="nav-link" href="#" onclick="filtroOnline('#offline');" >Online</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Offline</a>
+            <a class="nav-link" href="#" onclick="filtroOnline('#online');">Offline</a>
           </li>
         </ul>
       </div>
@@ -41,26 +41,22 @@
       </div>
     </div>
 
+
     <!-- FOOTER -->
-        <footer>
-          <p class="float-right"><a href="#">Voltar ao Topo</a></p>
-          <p>&copy; 1996 - 2017 - CGLSOFT Serviços de TI. &middot;</p>
-          <div className="nav navbar-nav navbar-right social_media">
-            <a href="https://www.facebook.com/cglsoft"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-            <a href="https://twitter.com/cglsoft"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-            <a href="https://plus.google.com/+cglsoft"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-            <a href="mailto:cglsoft@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-          </div>
-        </footer>
+    <div>
+      <footer>
+        <p class="float-right"><a href="#">Voltar ao Topo</a></p>
+        <p>&copy; 1996 - 2017 - CGLSOFT Serviços de TI. &middot;</p>
+        <div className="nav navbar-nav navbar-right social_media">
+          <a href="https://www.facebook.com/cglsoft"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+          <a href="https://twitter.com/cglsoft"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+          <a href="https://plus.google.com/+cglsoft"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+          <a href="mailto:cglsoft@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+        </div>
+      </footer>
+    </div>
 
-      </div><!-- /.container -->
-
-
-  </div>
-
-
-
-
+  </div><!-- /.container -->
 
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
