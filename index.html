@@ -13,27 +13,28 @@
 </head>
 <body>
   <div class="container">
-    <div class="card animated fadeInLeft">
+    <div class="card">
       <div class="text-center">
         <img class="card-img-top" style="width: 300px;"  src="http://pre11.deviantart.net/b72b/th/pre/f/2016/063/a/6/logo_by_maxigamer-d9tx6iz.png" alt="Card image cap">
       </div>
       <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs">
+        <ul class="nav nav-tabs card-header-tabs ">
           <li class="nav-item">
-            <a class="nav-link active" href="#" onclick="loadPageInfo();"><span class="glyphicon glyphicon-earphone pull-left"></span>All</a>
+            <a class="nav-link active" href="#form" onclick="loadPageInfo(); "><span class="glyphicon glyphicon-earphone pull-left"></span>All</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="filtroOnline('#offline');" >Online</a>
+            <a class="nav-link" href="#linha1" onclick="filtroHtml('#offline');" >Online</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" onclick="filtroOnline('#online');">Offline</a>
+            <a class="nav-link" href="#linha2" onclick="filtroHtml('#online');">Offline</a>
           </li>
         </ul>
       </div>
+
       <nav class="navbar navbar-light bg-faded justify-content-between">
         <form class="form-inline">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input id="inputPesq" class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0"  onclick="SearchHml();" type="submit">Search User Name</button>
         </form>
       </nav>
       <div id="idCardBlock" class="card-columns">
